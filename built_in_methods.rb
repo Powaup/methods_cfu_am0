@@ -10,19 +10,24 @@
 
 
 "Hello World".include?("Hello")
+#.include? is used to check if a given object is present in an array or string
+# the argyment "Hello" is check here and is included so result of true will coem out
 
 
 "Hello World".end_with?("Hello")
-
-
+# .end_with? method is used to check if a given string ends with a specified suffix or set of suffixes.
+# the result here would be false because the string does not end with "Hello"
 "Hello World".end_with?("rld")
+# The result here would be true
 
 
 12.even?
-
+# .even method is used to check if a given integer is even
+# result here would be true
 
 18.next
-
+# .next method returns the integer or character that follows the current one
+# the result here would be 19
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
@@ -39,6 +44,14 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# Returns true because x is in Rolex
+brand = "Rolex"
+puts brand.include?("x")
+
+# Returns 3 because that is the index of the first "r"
+month = "February"
+puts month.index("r")
+
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -47,10 +60,25 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# Multiplies 6 by 10
+time = 6
+puts 6 * 10
 
+# Returns 3 to the power of 2
+number = 3
+puts 3 ** 2
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# Deletes the last element, 9
+list1 = [4, 6, 9]
+puts list1.pop
+
+# Deletes all elements that equal 4 in the array
+
+list2= [4, 8, 12, 89, 4, 9]
+puts list2.delete(4)
