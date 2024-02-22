@@ -10,7 +10,7 @@ def greeting1
     puts "hello"
 end
 
-puts greeting1
+gen_greeting = greeting1
 
 # What is the return value of your method? Hello 
 # How many arguments did you pass your method? 0
@@ -22,7 +22,7 @@ def greeting2(name)
     puts "hello #{name}"
 end
 
-puts greeting2("Clyde")
+clydes_greeting = greeting2("Clyde")
 
 # What is the return value of your method? a name
 # How many arguments did you pass your method? 1
@@ -35,7 +35,7 @@ def greeting3(f_name, m_name, l_name)
     puts "Hello #{f_name} #{m_name} #{l_name}, how are you?"
 end
 
-puts greeting3("Clyde", "Sewat", "Autin")
+clyde_full_greeting = greeting3("Clyde", "Sewat", "Autin")
 
 # What is the return value of your method? Hello Clyde Sewat Autin, how are you?
 # How many arguments did you pass your method? 3
@@ -49,7 +49,7 @@ def square(number)
     puts number ** 2
 end
 
-puts square(2)
+square_of_two = square(2)
 
 # What is the return value of your method? 4 
 # How many arguments did you pass your method? 1
